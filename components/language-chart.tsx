@@ -43,12 +43,17 @@ export function LanguageChart({ data, className }: LanguageChartProps) {
             data={data}
             cx="50%"
             cy="50%"
-            innerRadius={60}
-            outerRadius={80}
+            innerRadius={40}
+            outerRadius={70}
             paddingAngle={2}
             dataKey="value"
-            label={({ name, percent }) => `${name} ${(percent * 100).toFixed(1)}%`}
-            labelLine={false}
+            label={({ name, percent }) => {
+              const value = (percent * 100).toFixed(0);
+              return window.innerWidth < 768 
+                ? `${value}%` 
+                : `${name} ${value}%`;
+            }}
+            labelLine={window.innerWidth >= 768}
           >
             {data.map((entry, index) => (
               <Cell key={`cell-${index}`} fill={entry.color} />
@@ -56,9 +61,14 @@ export function LanguageChart({ data, className }: LanguageChartProps) {
           </Pie>
           <Tooltip
             formatter={(value, name) => [`${value}%`, name]}
-            contentStyle={{ borderRadius: "8px", border: "1px solid #e2e8f0" }}
+            contentStyle={{ borderRadius: "8px", border: "1px solid #e2e8f0", fontSize: "12px" }}
           />
-          <Legend layout="horizontal" verticalAlign="bottom" align="center" />
+          <Legend 
+            layout="horizontal" 
+            verticalAlign="bottom" 
+            align="center" 
+            wrapperStyle={{ fontSize: '12px' }}
+          />
         </PieChart>
       </ResponsiveContainer>
     </div>

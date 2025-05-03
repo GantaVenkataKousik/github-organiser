@@ -169,17 +169,17 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="flex h-screen bg-background">
+    <div className="flex h-screen bg-background overflow-hidden">
       <MainSidebar />
       <div className="flex-1 overflow-auto">
-        <main className="container py-6">
+        <main className="container py-6 px-4 md:px-6">
           <div className="mb-8">
             <h1 className="text-3xl font-bold">GitHub Organizer</h1>
             <p className="text-muted-foreground mt-2">Track and analyze GitHub profiles with ease</p>
           </div>
 
           <Card className="mb-8 overflow-hidden border border-border/50 shadow-sm hover:shadow-md transition-shadow">
-            <CardContent className="p-8">
+            <CardContent className="p-4 sm:p-6 md:p-8">
               <div className="flex flex-col sm:flex-row gap-4">
                 <div className="flex-1 relative">
                   <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
@@ -203,7 +203,7 @@ export default function Dashboard() {
                   ) : (
                     <>
                       <Search className="h-4 w-4" />
-                      Search
+                      <span className="sm:inline">Search</span>
                     </>
                   )}
                 </Button>
