@@ -21,6 +21,7 @@ import {
   Users,
   Code,
   ExternalLink,
+  Palette,
 } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
@@ -92,13 +93,13 @@ const mockSkills = [
   { name: "Docker", level: "Beginner" },
 ]
 
-// Mock education data
+// Education data
 const mockEducation = [
   {
-    institution: "Anil Neerukonda Institute of Technology and Sciences",
-    degree: "Bachelor of Technology in Computer Science",
-    year: "2020 - 2024",
-    description: "Graduated with First Class Honors. Specialized in Artificial Intelligence and Machine Learning.",
+    institution: "Vishnu Institute of Technology (Autonomous)",
+    degree: "Bachelor of Technology - BTech, Computer Science",
+    year: "2021 - 2025",
+    description: "Grade: 9.06",
   },
   {
     institution: "Narayana Junior College",
@@ -114,29 +115,29 @@ const mockEducation = [
   },
 ]
 
-// Mock experience data
+// Experience data
 const mockExperience = [
   {
-    company: "Tech Innovations Inc.",
+    company: "ChatFin CA, US - Remote",
     position: "Software Developer Intern",
-    year: "May 2023 - Aug 2023",
+    year: "Mar 2025 - Present",
     description:
-      "Developed and maintained web applications using React and Node.js. Implemented new features and fixed bugs in existing applications.",
+      "Designed and implemented interfaces based on client requirements. Developed features for web applications and contributed to building an AI tool for financial requirements. Optimized UI components and API integrations to enhance responsiveness, scalability, and overall system efficiency.",
   },
   {
-    company: "CodeCraft Solutions",
-    position: "Frontend Developer (Part-time)",
-    year: "Jan 2023 - Apr 2023",
+    company: "Wellytics Thub, Hyderabad, Telangana - Hybrid",
+    position: "Full Stack Developer Intern",
+    year: "Apr 2024 - Mar 2025",
     description:
-      "Worked on UI/UX improvements for client websites. Implemented responsive designs using HTML, CSS, and JavaScript.",
+      "Designed and developed interfaces using Vue.js for dashboard, messaging, patient and calendars tabs. Built an audio transcription tool for live audio generation and utilized ApexCharts for data visualization. Developed a pedigree tool for patient family trees and ensured responsive web design for seamless user experience.",
   },
   {
-    company: "DataMinds Research",
-    position: "Research Assistant",
-    year: "Jun 2022 - Dec 2022",
+    company: "Freelance",
+    position: "Full Stack Developer",
+    year: "2020 - Present",
     description:
-      "Assisted in data collection and analysis for machine learning projects. Implemented algorithms in Python.",
-  },
+      "Worked with 15+ startups building their end-to-end products. Responsibilities include designing, developing web and mobile applications, deploying them, and maintaining them throughout their lifecycle. Expertise in delivering complete solutions from concept to deployment.",
+  }
 ]
 
 // Mock projects data
@@ -202,15 +203,11 @@ export default function DeveloperPage() {
                   <div className="mt-4 space-y-2">
                     <div className="flex items-center justify-center md:justify-start gap-2">
                       <Mail className="h-4 w-4 text-muted-foreground" />
-                      <span>venkatakousikcs01@gmail.com</span>
-                    </div>
-                    <div className="flex items-center justify-center md:justify-start gap-2">
-                      <Phone className="h-4 w-4 text-muted-foreground" />
-                      <span>+91 7337066524</span>
+                      <span>venkatakousikcse01@gmail.com</span>
                     </div>
                     <div className="flex items-center justify-center md:justify-start gap-2">
                       <MapPin className="h-4 w-4 text-muted-foreground" />
-                      <span>Visakhapatnam, Andhra Pradesh, India</span>
+                      <span>Hyderabad, Telangana, India</span>
                     </div>
                   </div>
 
@@ -221,9 +218,9 @@ export default function DeveloperPage() {
                       className="gap-2 rounded-full border-primary/20 hover:border-primary/50 hover:bg-primary/5"
                       asChild
                     >
-                      <a href="https://github.com/GantaVenkataKousik" target="_blank" rel="noopener noreferrer">
-                        <Github className="h-4 w-4" />
-                        GitHub
+                      <a href="https://linktr.ee/GantaVenkataKousik" target="_blank" rel="noopener noreferrer">
+                        <LinkIcon className="h-4 w-4" />
+                        LinkTree
                       </a>
                     </Button>
                     <Button
@@ -247,9 +244,9 @@ export default function DeveloperPage() {
                       className="gap-2 rounded-full border-primary/20 hover:border-primary/50 hover:bg-primary/5"
                       asChild
                     >
-                      <a href="https://linktr.ee/GantaVenkataKousik" target="_blank" rel="noopener noreferrer">
-                        <LinkIcon className="h-4 w-4" />
-                        LinkTree
+                      <a href="https://www.behance.net/venkatakousik" target="_blank" rel="noopener noreferrer">
+                        <Palette className="h-4 w-4" />
+                        Behance
                       </a>
                     </Button>
                     <Button
@@ -258,9 +255,9 @@ export default function DeveloperPage() {
                       className="gap-2 rounded-full border-primary/20 hover:border-primary/50 hover:bg-primary/5"
                       asChild
                     >
-                      <a href="#" target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="h-4 w-4" />
-                        Portfolio
+                      <a href="https://github.com/GantaVenkataKousik" target="_blank" rel="noopener noreferrer">
+                        <Github className="h-4 w-4" />
+                        GitHub
                       </a>
                     </Button>
                   </div>
@@ -271,16 +268,14 @@ export default function DeveloperPage() {
               <div className="mb-6">
                 <h3 className="text-xl font-semibold mb-2">About Me</h3>
                 <p className="text-muted-foreground">
-                  Passionate software developer with expertise in full-stack web development. Skilled in React, Next.js,
-                  and Node.js. Currently pursuing a B.Tech in Computer Science with a focus on AI and Machine Learning.
-                  Committed to creating efficient, scalable, and user-friendly applications.
+                  A versatile professional with expertise in full-stack development, UI/UX design, DevOps, and AI-driven automation. Experienced in working with 15+ startups to deliver end-to-end products from design to deployment. Specializes in building high-performance digital solutions across various domains, focusing on scalability, efficiency, and exceptional user experience.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
                 <StatsCard
                   title="Repositories"
-                  value="42"
+                  value="190+"
                   icon={<Code className="h-4 w-4" />}
                   trend="up"
                   trendValue="3 new this month"
@@ -303,11 +298,11 @@ export default function DeveloperPage() {
                   className="card-shadow"
                 />
                 <StatsCard
-                  title="Followers"
-                  value="156"
+                  title="Profile Views"
+                  value="1200+"
                   icon={<Users className="h-4 w-4" />}
                   trend="up"
-                  trendValue="8 new this month"
+                  trendValue="86 new this month"
                   className="card-shadow"
                 />
               </div>
@@ -323,6 +318,12 @@ export default function DeveloperPage() {
                 Overview
               </TabsTrigger>
               <TabsTrigger
+                value="experience"
+                className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
+              >
+                Experience
+              </TabsTrigger>
+              <TabsTrigger
                 value="skills"
                 className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
               >
@@ -333,12 +334,6 @@ export default function DeveloperPage() {
                 className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
               >
                 Education
-              </TabsTrigger>
-              <TabsTrigger
-                value="experience"
-                className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
-              >
-                Experience
               </TabsTrigger>
               <TabsTrigger
                 value="projects"
@@ -531,11 +526,25 @@ export default function DeveloperPage() {
 
               <Card className="card-shadow">
                 <CardHeader>
-                  <CardTitle>Volunteer Experience</CardTitle>
-                  <CardDescription>Community involvement and contributions</CardDescription>
+                  <CardTitle>Startup Experience</CardTitle>
+                  <CardDescription>Freelance and startup collaborations</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
+                    <div className="border-l-2 border-primary/30 pl-4 pb-2">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-1">
+                        <h3 className="text-lg font-semibold">Full Stack Development</h3>
+                        <Badge variant="outline" className="md:ml-2 mt-1 md:mt-0 inline-flex">
+                          <Calendar className="mr-1 h-3 w-3" />
+                          2020 - Present
+                        </Badge>
+                      </div>
+                      <p className="text-primary font-medium">15+ Startup Companies</p>
+                      <p className="text-muted-foreground mt-1">
+                        Built end-to-end products from design to deployment for various startups across different domains. Created responsive and user-friendly web and mobile applications.
+                      </p>
+                    </div>
+
                     <div className="border-l-2 border-primary/30 pl-4 pb-2">
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-1">
                         <h3 className="text-lg font-semibold">Open Source Contributor</h3>
@@ -546,21 +555,7 @@ export default function DeveloperPage() {
                       </div>
                       <p className="text-primary font-medium">Various GitHub Projects</p>
                       <p className="text-muted-foreground mt-1">
-                        Contributing to open source projects in the React and Next.js ecosystem.
-                      </p>
-                    </div>
-
-                    <div className="border-l-2 border-primary/30 pl-4 pb-2">
-                      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-1">
-                        <h3 className="text-lg font-semibold">Technical Workshop Instructor</h3>
-                        <Badge variant="outline" className="md:ml-2 mt-1 md:mt-0 inline-flex">
-                          <Calendar className="mr-1 h-3 w-3" />
-                          2021 - 2023
-                        </Badge>
-                      </div>
-                      <p className="text-primary font-medium">College Technical Club</p>
-                      <p className="text-muted-foreground mt-1">
-                        Conducted workshops on web development and programming fundamentals for junior students.
+                        Contributing to open source projects in the React, Vue.js, and Next.js ecosystem.
                       </p>
                     </div>
                   </div>
@@ -570,77 +565,17 @@ export default function DeveloperPage() {
 
             {/* Projects Tab */}
             <TabsContent value="projects">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                {mockProjects.map((project, index) => (
-                  <Card key={index} className="card-shadow hover:shadow-md transition-shadow">
-                    <CardHeader>
-                      <CardTitle className="flex items-center justify-between">
-                        <span>{project.name}</span>
-                        <Button variant="ghost" size="icon" asChild>
-                          <a href={project.link} target="_blank" rel="noopener noreferrer">
-                            <ExternalLink className="h-4 w-4" />
-                            <span className="sr-only">Visit project</span>
-                          </a>
-                        </Button>
-                      </CardTitle>
-                      <CardDescription>{project.description}</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="flex flex-wrap gap-2">
-                        {project.technologies.map((tech, techIndex) => (
-                          <Badge key={techIndex} variant="secondary" className="bg-primary/10 text-primary">
-                            {tech}
-                          </Badge>
-                        ))}
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-
               <Card className="card-shadow">
                 <CardHeader>
-                  <CardTitle>Open Source Contributions</CardTitle>
-                  <CardDescription>Contributions to public repositories</CardDescription>
+                  <CardTitle>Projects</CardTitle>
+                  <CardDescription>Full portfolio of projects</CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <div className="border-l-2 border-primary/30 pl-4 pb-2">
-                      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-1">
-                        <h3 className="text-lg font-semibold">React Documentation</h3>
-                        <Badge variant="outline" className="md:ml-2 mt-1 md:mt-0 inline-flex">
-                          <GitFork className="mr-1 h-3 w-3" />5 PRs Merged
-                        </Badge>
-                      </div>
-                      <p className="text-primary font-medium">facebook/react</p>
-                      <p className="text-muted-foreground mt-1">
-                        Contributed to documentation improvements and fixed typos.
-                      </p>
-                    </div>
-
-                    <div className="border-l-2 border-primary/30 pl-4 pb-2">
-                      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-1">
-                        <h3 className="text-lg font-semibold">Next.js Examples</h3>
-                        <Badge variant="outline" className="md:ml-2 mt-1 md:mt-0 inline-flex">
-                          <GitFork className="mr-1 h-3 w-3" />3 PRs Merged
-                        </Badge>
-                      </div>
-                      <p className="text-primary font-medium">vercel/next.js</p>
-                      <p className="text-muted-foreground mt-1">Added new examples and improved existing ones.</p>
-                    </div>
-
-                    <div className="border-l-2 border-primary/30 pl-4 pb-2">
-                      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-1">
-                        <h3 className="text-lg font-semibold">Tailwind CSS</h3>
-                        <Badge variant="outline" className="md:ml-2 mt-1 md:mt-0 inline-flex">
-                          <GitFork className="mr-1 h-3 w-3" />2 PRs Merged
-                        </Badge>
-                      </div>
-                      <p className="text-primary font-medium">tailwindlabs/tailwindcss</p>
-                      <p className="text-muted-foreground mt-1">
-                        Fixed bugs in utility classes and improved documentation.
-                      </p>
-                    </div>
+                <CardContent className="flex flex-col items-center justify-center py-16">
+                  <div className="text-center max-w-lg">
+                    <h3 className="text-xl font-semibold mb-4">Projects will be added soon</h3>
+                    <p className="text-muted-foreground">
+                      A complete showcase of my projects and contributions is currently being curated and will be available here shortly.
+                    </p>
                   </div>
                 </CardContent>
               </Card>

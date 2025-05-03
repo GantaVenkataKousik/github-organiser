@@ -472,7 +472,7 @@ export default function Dashboard() {
                 />
                 <StatsCard
                   title="Stars"
-                  value="328"
+                  value="156"
                   icon={<Star className="h-4 w-4" />}
                   trend="up"
                   trendValue="24 new this month"
@@ -480,7 +480,7 @@ export default function Dashboard() {
                 />
                 <StatsCard
                   title="Forks"
-                  value="97"
+                  value="18"
                   icon={<GitFork className="h-4 w-4" />}
                   trend="up"
                   trendValue="12 new this month"
