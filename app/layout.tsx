@@ -12,11 +12,24 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "GitHub Organizer - Track and Analyze GitHub Profiles",
-  description: "Comprehensive GitHub profile analytics and organization tool",
+  description: "Comprehensive GitHub profile analytics and organization tool with powerful visualizations and insights for developers",
+  keywords: ["GitHub", "analytics", "repositories", "contributions", "developer tools", "statistics", "code metrics", "portfolio"],
+  authors: [{ name: "Ganta Venkata Kousik", url: "https://github.com/GantaVenkataKousik" }],
+  creator: "Ganta Venkata Kousik",
   icons: {
     icon: "/favicon.ico",
+    apple: "/apple-icon.png",
+    shortcut: "/favicon-16x16.png",
   },
-    generator: 'v0.dev'
+  manifest: "/site.webmanifest",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+  },
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#1a1a1a" },
+  ],
 }
 
 export default function RootLayout({

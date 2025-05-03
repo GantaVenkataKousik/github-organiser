@@ -1,14 +1,16 @@
 # GitHub Organizer
 
-![GitHub Organizer](https://example.com/github-organizer-preview.png)
-
 A comprehensive GitHub profile analytics and organization tool that helps developers track and analyze GitHub profiles, repositories, and contributions with powerful visualizations and insights.
 
 ## Author
 
 **Ganta Venkata Kousik**  
 Email: venkatakousikcse01@gmail.com  
-GitHub: [GantaVenkataKousik](https://github.com/GantaVenkataKousik)
+Location: Hyderabad, Telangana, India  
+LinkedIn: [gantavenkatakousik](https://www.linkedin.com/in/gantavenkatakousik/)  
+GitHub: [GantaVenkataKousik](https://github.com/GantaVenkataKousik)  
+LinkTree: [GantaVenkataKousik](https://linktr.ee/GantaVenkataKousik)  
+Behance: [venkatakousik](https://www.behance.net/venkatakousik)
 
 ## Features
 
@@ -67,6 +69,17 @@ pnpm dev
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
+### Favicon and Metadata
+
+To set up the favicon and metadata:
+
+1. Add the GitHub icon as favicon in the `/public` directory
+2. Update `layout.tsx` with proper metadata:
+   - Title: GitHub Organizer
+   - Description: Comprehensive GitHub profile analytics and organization tool
+   - Keywords: GitHub, analytics, repositories, contributions, developer tools
+   - Author: Ganta Venkata Kousik
+
 ## Usage
 
 1. **Search for GitHub Profiles**: Enter a GitHub username in the search bar to view detailed analytics
@@ -77,14 +90,17 @@ pnpm dev
 
 ## Screenshots
 
-### Dashboard
-![Dashboard](https://example.com/github-organizer-dashboard.png)
+### Welcome Dashboard
+![Welcome Dashboard](https://github-organiser.vercel.app/screenshots/welcome-dashboard.png)
 
-### Profile Analytics
-![Profile Analytics](https://example.com/github-organizer-profile.png)
+### Analytics Dashboard
+![Analytics Dashboard](https://github-organiser.vercel.app/screenshots/analytics-dashboard.png)
 
-### Repository Insights
-![Repository Insights](https://example.com/github-organizer-repos.png)
+### Starred Repositories
+![Starred Repositories](https://github-organiser.vercel.app/screenshots/starred-repositories.png)
+
+### Developer Profile
+![Developer Profile](https://github-organiser.vercel.app/screenshots/developer-profile.png)
 
 ## Contributing
 
