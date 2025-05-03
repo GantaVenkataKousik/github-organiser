@@ -17,8 +17,12 @@ export const metadata: Metadata = {
   authors: [{ name: "Ganta Venkata Kousik", url: "https://github.com/GantaVenkataKousik" }],
   creator: "Ganta Venkata Kousik",
   icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-icon.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-16x16.png", sizes: "16x16" },
+      { url: "/favicon-32x32.png", sizes: "32x32" }
+    ],
+    apple: "/apple-touch-icon.png",
     shortcut: "/favicon-16x16.png",
   },
   manifest: "/site.webmanifest",
