@@ -193,7 +193,6 @@ export default function DeveloperPage() {
                       height={150}
                       className="rounded-full border-4 border-white shadow-md object-cover"
                     />
-                    <div className="absolute -bottom-1 -right-1 h-6 w-6 rounded-full bg-green-500 border-2 border-white"></div>
                   </div>
                 </div>
                 <div className="flex-1 text-center md:text-left">
